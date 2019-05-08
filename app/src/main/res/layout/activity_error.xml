@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/iv_bug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/customactivityoncrash_error_image"/>
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_bug"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:text="An unexpected error occured."
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black_60"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_sorry"
+            android:layout_below="@+id/tv_error"
+            android:text="Sorry for the inconvenience."
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black_60"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/btn_restart"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_sorry"
+            android:layout_marginTop="14dp"
+            android:layout_centerHorizontal="true"
+            android:text="Restart App"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_restart_bg"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+</RelativeLayout>

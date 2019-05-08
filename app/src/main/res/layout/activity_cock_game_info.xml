@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cock_game_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.biotag.cockowner.activity.CockGameRecordActivity">
+    <include layout="@layout/portrait_title_bar_similar"
+        android:id="@+id/titlebar_cockgame"/>
+    <!--不可以由Owner来主动添加比赛的场次-->
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_additem"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="20dp"-->
+        <!--android:layout_marginRight="20dp">-->
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:src="@mipmap/add_item"/>-->
+    <!--</RelativeLayout>-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fl_cockgamerecord_content"
+        android:layout_below="@+id/titlebar_cockgame"/>
+</RelativeLayout>

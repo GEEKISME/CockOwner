@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_refresh"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_below="@+id/title_bar"
+    android:gravity="center"
+    android:background="@color/color_fafafa"
+    android:visibility="visible"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/network_problem"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Click to reload"
+        android:textColor="@color/color_9c9999"
+        android:textSize="@dimen/dimen_15"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/refreshbutton"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:visibility="visible"
+        android:background="@mipmap/reload1"
+        android:layout_gravity="center"
+        />
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.biotag.cockowner.activity.MyCockActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/black"
+        android:id="@+id/titlebar"/>
+    <RelativeLayout
+        android:id="@+id/rl_back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_48"
+        android:visibility="visible"
+        android:background="@color/translucent">
+
+        <RelativeLayout
+            android:id="@+id/portrait_backbtn"
+            android:layout_width="@dimen/dimen_48"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/p_back"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_search_go"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        >
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/dimen_15"
+            android:src="@mipmap/search_gow"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="@dimen/dimen_80"
+        android:layout_height="@dimen/dimen_48"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text=""
+            android:textSize="19sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:layout_below="@+id/titlebar"
+        android:id="@+id/xrcv_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none"
+        android:scrollingCache="false"
+        android:visibility="visible"
+        />
+    <ImageView
+        android:id="@+id/iv_add_item"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerInside"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/add_img"/>
+</RelativeLayout>

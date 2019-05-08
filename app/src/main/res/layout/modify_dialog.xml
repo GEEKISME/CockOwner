@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyboardView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/sendView"
+    android:background="@color/subscribe_activity_bg"
+    >
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/translucent"
+        android:padding="@dimen/dimen_10"
+        android:textSize="@dimen/dimen_15"
+        android:text=""
+        />
+    <Button
+        android:id="@+id/okBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/translucent"
+        android:padding="@dimen/dimen_10"
+        android:textSize="@dimen/dimen_15"
+        android:text=""
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>
+    <LinearLayout
+        android:id="@+id/sendView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingTop="@dimen/dimen_15"
+        android:paddingBottom="@dimen/dimen_15"
+        >
+
+        <com.biotag.cockowner.customdialog.WheelView
+            android:id="@+id/wheelView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </com.biotag.cockowner.customdialog.WheelView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

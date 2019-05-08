@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.biotag.cockowner.activity.TimePickerActivity">
+
+    <include layout="@layout/portrait_title_bar_similar"
+             android:id="@+id/titlebar_chooseweight"/>
+
+    <LinearLayout
+        android:layout_below="@+id/titlebar_chooseweight"
+        android:layout_marginTop="20dp"
+        android:id="@+id/time_picker"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+        <com.biotag.cockowner.customview.NumberPickerView
+            android:id="@+id/picker_unit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:npv_HintText="."
+            app:npv_TextSizeHint="30sp"
+            app:npv_ItemPaddingHorizontal="5dp"
+            app:npv_ItemPaddingVertical="5dp"
+            app:npv_RespondChangeInMainThread="false"
+            app:npv_ShowCount="3"
+            app:npv_TextSizeNormal="16sp"
+            app:npv_TextSizeSelected="20sp"
+            app:npv_WrapSelectorWheel="true"
+            app:npv_TextArray="@array/unit_display"
+            app:npv_DividerColor="@color/advance_red"
+            app:npv_TextColorSelected="@color/advance_red"
+            />
+        <com.biotag.cockowner.customview.NumberPickerView
+            android:id="@+id/picker_decimal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:npv_ItemPaddingHorizontal="5dp"
+            app:npv_ItemPaddingVertical="5dp"
+            app:npv_RespondChangeInMainThread="false"
+            app:npv_ShowCount="3"
+            app:npv_TextSizeNormal="16sp"
+            app:npv_TextSizeSelected="20sp"
+            app:npv_WrapSelectorWheel="true"
+            app:npv_TextArray="@array/decimals_display"
+            app:npv_DividerColor="@color/advance_red"
+            app:npv_TextColorSelected="@color/advance_red"
+            />
+        <com.biotag.cockowner.customview.NumberPickerView
+            android:id="@+id/picker_danwei"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:npv_ItemPaddingHorizontal="5dp"
+            app:npv_ItemPaddingVertical="5dp"
+            app:npv_RespondChangeInMainThread="false"
+            app:npv_ShowCount="3"
+            app:npv_TextSizeNormal="16sp"
+            app:npv_TextSizeSelected="20sp"
+            app:npv_WrapSelectorWheel="true"
+            app:npv_TextArray="@array/danwei"
+            app:npv_DividerColor="@color/advance_red"
+            app:npv_TextColorSelected="@color/advance_red"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

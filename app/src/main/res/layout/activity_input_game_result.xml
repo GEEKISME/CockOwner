@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_input_game_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.biotag.cockowner.activity.InputGameResultActivity">
+
+    <include layout="@layout/portrait_title_bar_similar"
+        android:id="@+id/titlebar_input"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titlebar_input"
+        android:gravity="center"
+        android:padding="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/wincockchip"/>
+        <RadioGroup
+            android:id="@+id/rg_cockchipcode"
+            android:layout_below="@+id/wincockchip"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rb_cock1"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cock1"
+                android:tag="1"/>
+            <RadioButton
+                android:id="@+id/rb_cock2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cock2"
+                android:tag="2"/>
+        </RadioGroup>
+        <Button
+            android:layout_below="@+id/rg_cockchipcode"
+            android:id="@+id/btn_query"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="25dp"
+            android:text="Confirm"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:background="@drawable/startgameornot"/>
+    </RelativeLayout>
+</RelativeLayout>

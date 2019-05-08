@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="advanced_rey">#0accac</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="advance_red">#D71429</color>   <!--原先旧的红色#d8251e-->
+    <color name="_9">#999999</color>
+    <color name="e">#EEEEEE</color>
+    <color name="c">#CCCCCC</color>
+    <color name="red">#ff0006</color>
+    <color name="_8c">#8c8c8c</color>
+    <color name="a5">#A5A5A5</color>
+    <color name="hotpink">#FF69B4</color><!--热粉红色 -->
+    <color name="hot_pink">#FD4C5B</color><!-- Acfun主题色 -->
+    <color name="black_70">#b2000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="translucent">#00000000</color>
+    <color name="choice_gray">#c6c6c6</color>
+    <color name="color_fafafa">#fafafa</color>
+    <color name="color_9c9999">#9c9999</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_333333">#333333</color>
+    <color name="transparent">#00000000</color>
+    <color name="subscribe_item_disabled_stroke">#ffd9d9d9</color>
+    <color name="primary_dark">#0288D1</color>
+    <color name="color_f6f5f8">#f6f5f8</color>
+    <color name="user_sign">#a4a4a4</color>
+    <color name="subscribe_activity_bg">#ffefefef</color>
+    <color name="choice_subtitle">#d8251e</color>
+    <color name="scan_corner_color">#0effc2</color>
+    <color name="outside_color_gray">#66444444</color>
+    <color name="color_e6_d71429">#e6d71429</color>
+    <color name="black_50">#80000000</color>
+    <!--<color name="lightgreen">#2ADD3A</color>-->
+    <color name="lightyellow">#EEE685</color>
+    <color name="light">#99CC99</color>
+    <color name="lighta">#99CCCC</color>
+    <color name="color_c6c6c6">#c6c6c6</color>
+    <color name="grid_bg">#f0eff5</color>
+    <!--<color name="arc_blue">#10a679</color>-->
+    <color name="arc_blue">#D71429</color>
+    <color name="background_color_blue">#e553c5f8</color>
+
+    <!--                -->
+    <color name="black_60">#99000000</color>
+
+    <color name="fooyo_tint_red">#ef5d6a</color>
+    <color name="fooyo_mid_green">#50b848</color>
+    <color name="fooyo_azure">#00aeef</color>
+</resources>
